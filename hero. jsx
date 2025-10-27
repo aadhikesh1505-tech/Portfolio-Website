@@ -1,0 +1,28 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+const Hero = () => {
+  return (
+    <section className="text-center py-20 px-4">
+      <motion.h2
+        className="text-4xl md:text-6xl font-bold mb-4"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Hi, I'm <span className="text-yellow-300">Atharsha A</span>
+      </motion.h2>
+      <p className="text-xl text-gray-100 mb-8">
+        Front-End Developer | IBM SkillsBuild Trainee
+      </p>
+      <a
+        href="#projects"
+        className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-300 transition"
+      >
+        View My Work
+      </a>
+    </section>
+  );
+};
+
+export default Hero;
